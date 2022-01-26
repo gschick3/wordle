@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Wordle</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <h2>Wordle</h2>
+        <section>
+            <p>Welcome to Wordle! The goal of this game is to guess the correct 5-letter word in 5 tries.</p>
+            <h3>Legend</h3>
+            <p>Correctly placed letters will be added overhead.</p>
+            <p>Unaccented letter (A) - Letter is not in word.</p>
+            <p>Underlined letter (<u>A</u>) - Letter is placed correctly.</p>
+            <p>Italicized letter (<em>A</em>) - Letter is in word but not placed correctly.</p>
+        </section>
+        <hr>
+        <section>
+            <div class="column">
+                <h4><u>Guesses</u></h4>
+                <div id="guesses"> </div>
+            </div>
+            <div class="column">
+                <div id="word"><h3>_ _ _ _ _</h3></div>
+                <input type="text" id="guess">
+                <button type="button" onclick="makeGuess()">Guess</button>
+                <div id="message"></div>
+                <br>
+                <button type="button" onclick="resetGame()">New Game</button>
+            </div>
+        </section>
+    </body>
+</html>
